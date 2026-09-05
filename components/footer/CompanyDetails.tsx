@@ -5,7 +5,7 @@ export default function CompanyDetails() {
   return (
     <section>
         <Image src="/images/logo.png" alt="tobamsgroup" 
-        width={100} height={100} />
+        width={100} height={100} className="h-auto w-50"/>
         <p>Tobams Group is an innovative consultancy firm reshaping 
             the future of tech talent development in Africa, specializing 
             in talent acquisition, internships, and skill development with 
@@ -20,8 +20,9 @@ export default function CompanyDetails() {
                 src={li.icon} 
                 alt=""              
                 aria-hidden="true"  
-                width={24} 
-                height={24} 
+                width={400}
+                height={250}
+                className="h-auto w-50"
                 />
             </a>)}
         </nav>

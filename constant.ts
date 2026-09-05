@@ -1,49 +1,72 @@
 export const navList = [
     {
         text: "About",
-        link: "/"
+        link: "/",
+        dropdown: true,
     },
     {
         text: "What We Do",
-        link: "/"
+        link: "/",
+        dropdown: true,
     },
     {
         text: "Jobs",
-        link: "/"
+        link: "/",
+        dropdown: true,
     },
     {
         text: "Project",
-        link: "/"
+        link: "/",
+        dropdown: false
     },
     {
         text: "TG Academy",
-        link: "/"
+        link: "/",
+        dropdown: false
     },
     {
         text: "Strategic Partnership",
-        link: "/"
+        link: "/",
+        dropdown: false
     },
     {
         text: "Pricing",
-        link: "/"
+        link: "/",
+        dropdown: false
     },
     {
         text: "Book a Consultation",
-        link: "/"
+        link: "/",
+        dropdown: false
     },
 ]
 
 export const lmsCourses = ["Business Analysis", "Design Thinking", "Effective Communication", "Entrepreneurship", "Career Development", "Business Model"]
 
-export const corporateTrainingPrograms = ["Leadership Training", "Strategic Planning and Implementation", "Project Management", "Sustainability Training", "Customised Training"]
-
-export const personalizedIndividualTrainingPrograms = ["Leadership Development", "Soft Skills Development", "Industry Specific Knowledge", "Technical Skills Enhancement", "Time Management and Productivity", "Career Development"]
-
-export const capacityDevPrograms = ["Tailored Training Programs", "Expert-Led Workshops", "Personalized Mentorship", "Technical Skills Enhancement", "Collaborative Learning Environment", "Ongoing Support and Resources"]
-
-export const managementDevPrograms = ["Enhanced Leadership Skills", "Improved Employee Engagement", "Stronger Organisational Culture", "Sustainable Growth"]
-
 export const ceoPrograms = ["Strategic Career Guidance", "Leadership Development", "CV Development", "Sustainability Leadership", "Communication Skills", "Business Model"]
+
+export const managementDevPrograms =  ["Enhanced Leadership Skills", "Improved Employee Engagement", "Stronger Organisational Culture", "Sustainable Growth"]
+
+export const trainings = [ 
+    {
+        image: "/images/corporate-trainings.jpg",
+        heading: "Corporate Trainings",
+        body: "Empower your team with our customised Corporate Training programs designed to address the unique needs and objectives of your organisation. Our expert facilitators work closely with your team to deliver tailored learning experiences that align with your company's goals and values.",
+        programs: ["Leadership Training", "Strategic Planning and Implementation", "Project Management", "Sustainability Training", "Customised Training"]
+    },
+    {
+        image: "/images/personalized-individual-training.jpg",
+        heading: "Personalised Individual Training",
+        body: "Begin a journey of lifelong learning and professional development with Tobams Group's diverse range of training programs for individuals. From technical skills mastery to soft skills enhancement, our courses cover a wide spectrum of topics to meet the evolving needs of today's professionals.  ",
+        programs:  ["Leadership Development", "Soft Skills Development", "Industry Specific Knowledge", "Technical Skills Enhancement", "Time Management and Productivity", "Career Development"]
+    },
+    {
+        image: "/images/capacity-development.jpg",
+        heading: "Capacity Development",
+        body: "At Tobams Group, we empower individuals and organizations through tailored training programs, expert-led workshops, and personalized mentorship. We are committed to your success and growth. We are dedicated to providing a comprehensive suite of benefits designed to foster your development and success:",
+        programs: ["Tailored Training Programs", "Expert-Led Workshops", "Personalized Mentorship", "Technical Skills Enhancement", "Collaborative Learning Environment", "Ongoing Support and Resources"]
+    }
+]
 
 export const consultantPrograms = [
     {
@@ -91,12 +114,20 @@ export const testimonials = [
     }
 ]
 
-export const whatWeDo = ["Sustainability Services", "Strategy Planning and Implementation", "Tech Talent Solutions", "Training and Development", "IT Consulting Services", "Strategic Partnership", "Social Impact", "Digital Marketing", "Talent Recruitment"]
-
-export const company = ["About", "Jobs", "Projects", "Our Founder", "Business Model", "The Team", "Contact Us", "Blog", "FAQs", "Help a Tech Talent", "Testimonials"]
-
-export const solution = ["Tobams Group Academy", "Help a Tech Talent", "Campus Ambassadors Program", "Join Our Platform", "Pricing", "Strategic Partnership", "Book a Consultation", "Digital Marketing", "Join Our Slack Community"]
-
+export const footerlinks = [
+    {
+        heading: "What we do",
+        links: ["Sustainability Services", "Strategy Planning and Implementation", "Tech Talent Solutions", "Training and Development", "IT Consulting Services", "Strategic Partnership", "Social Impact", "Digital Marketing", "Talent Recruitment"]
+    },
+    {
+        heading: "Company",
+        links: ["About", "Jobs", "Projects", "Our Founder", "Business Model", "The Team", "Contact Us", "Blog", "FAQs", "Help a Tech Talent", "Testimonials"]
+    },
+    {
+        heading: "Solution",
+        links: ["Tobams Group Academy", "Help a Tech Talent", "Campus Ambassadors Program", "Join Our Platform", "Pricing", "Strategic Partnership", "Book a Consultation", "Digital Marketing", "Join Our Slack Community"]
+    }
+]
 export const socials= [
     {
         icon: "/icons/linkedin.svg",

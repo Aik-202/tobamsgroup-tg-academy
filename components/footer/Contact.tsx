@@ -17,11 +17,11 @@ export default function Contact() {
         <div>
             <h3>Contact Information</h3>
             <div>
-                <Image src="/icons/mail.svg" alt="" aria-hidden="true" width={24} height={24} />
+                <Image src="/icons/mail.svg" alt="" aria-hidden="true" width={24} height={24} className="h-auto w-50" />
                 <p>theteam@tobamsgroup.com</p>
             </div>
             <div>
-                <Image src="/icons/phone.svg" alt="" aria-hidden="true" width={24} height={24} />
+                <Image src="/icons/phone.svg" alt="" aria-hidden="true" width={24} height={24} className="h-auto w-50" />
                 <p>+447886600748</p>
             </div>
         </div>

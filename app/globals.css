@@ -5,6 +5,8 @@
   --color-secondary: #EF4353;
   --color-pending: #1671D9;
   --color-text: #151515;
+  
+  --background-image-hero: url("/images/hero-image.jpg");
 
   --font-heading: var(--font-nunito);
   --font-body: var(--font-nunito-sans);

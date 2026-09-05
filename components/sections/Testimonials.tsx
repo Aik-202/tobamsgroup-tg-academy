@@ -1,3 +1,4 @@
+import { testimonials } from "@/constant";
 import Image from "next/image";
 
 export default function Testimonials() {
@@ -5,24 +6,29 @@ export default function Testimonials() {
     <section aria-labelledby="testimonials-heading">
       <h2 id="testimonials-heading">Testimonials</h2>
       <div>
-        <figure>
-          <blockquote>
-            <p></p>
-          </blockquote>
-
+        {testimonials.map((testimonial =>  <figure key={testimonial.name}>
           <figcaption>
-            {/* <Image
-              src=""
-              alt=""
-            /> */}
+            <Image
+              src={testimonial.profilePic}
+              alt={testimonial.name}
+              width={100}
+              height={100}
+              className="h-auto w-50"
+            />
 
             <div>
-              <cite></cite>
-              <span></span>
+              <cite>{testimonial.name}</cite>
+              <span>{testimonial.position}</span>
             </div>
+
           </figcaption>
-        </figure>
+
+          <blockquote>
+            <p>{testimonial.comment}</p>
+          </blockquote>
+
+        </figure>))}
       </div>
-  </section>
+    </section>
   )
 }

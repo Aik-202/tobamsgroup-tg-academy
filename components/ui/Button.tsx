@@ -18,11 +18,11 @@ export default function Button({color, variant, text}: ButtonProps) {
     : "bg-white text-primary"}`}>
         
         {variant == "account" && <Image src="/icons/user.svg" 
-        alt="User Profile" width={48} height={48}/>}
+        alt="User Profile" width={100} height={100} className="bg-purple/10 h-auto w-50"/>}
         <span>{text}</span>
-        {variant == "account" &&  <ChevronDown className="bg-purple/10" />}
+        {variant == "account" &&  <ChevronDown className="color-purple/10" />}
         {variant == "learn_more" && <Image src="/icons/arrow-up-right.svg" 
-        alt="" aria-hidden="true" width={48} height={48} />}
+        alt="" aria-hidden="true" width={100} height={100} className="h-auto w-50"/>}
     </button>
   )
 }
