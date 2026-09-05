@@ -10,7 +10,7 @@ const variants = {
   },
   light: {
     fill: "#DDD0DA",
-    stroke: "#480F39",
+    stroke: "#DDD0DA",
   },
   outlined: {
     fill: "#DDD0DA",
