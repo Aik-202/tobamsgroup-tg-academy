@@ -4,7 +4,8 @@
   --color-primary: #571244;
   --color-secondary: #EF4353;
   --color-pending: #1671D9;
-  --color-text: #151515;
+  --color-dark: #151515;
+  --color-light: #DDD0DA;
   
   --background-image-hero: url("/images/hero-image.jpg");
 

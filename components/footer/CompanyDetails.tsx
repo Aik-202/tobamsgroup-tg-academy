@@ -1,11 +1,11 @@
 import { socials } from "@/constant";
 import Image from "next/image";
+import Logo from "../Logo";
 
 export default function CompanyDetails() {
   return (
     <section>
-        <Image src="/images/logo.png" alt="tobamsgroup" 
-        width={100} height={100} className="h-auto w-50"/>
+       <Logo />
         <p>Tobams Group is an innovative consultancy firm reshaping 
             the future of tech talent development in Africa, specializing 
             in talent acquisition, internships, and skill development with 

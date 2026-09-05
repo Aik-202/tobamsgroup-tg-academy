@@ -1,18 +1,39 @@
-import Image from "next/image";
 import NavItems from "./NavItems";
 import Button from "../ui/Button";
+import Logo from "../Logo";
+import Image from "next/image";
+import { useState } from "react";
 
-export default function NavBar() {
+export default function NavBar({ active } : {active: string}) {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false)
   return (
-    <nav>
-      <header>
-        <Image src="/images/logo.png" alt="tobamsgroup" width={100} height={100} className="h-auto w-50"/>
-        <div>
+    <nav className="flex flex-col gap-4">
+      <header className="w-full flex flex-row justify-between border border-transparent
+      border-b-light px-5 lg:px-3 -mb-2 md:mb-0">
+        <Logo />
+        <div className="hidden lg:flex flex-row gap-10 items-center">
           <Button color="purple" text="Account" variant="account"/>
           <Button color="red" text="Take Assessment" />
         </div>
+        <button
+          type="button"
+          className="lg:hidden cursor-pointer"
+          aria-haspopup="true"
+          aria-expanded={menuOpen ? "true" : "false"}
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          <Image 
+            src={menuOpen ? "/icons/hamburger-close.svg" : "/icons/hamburger-open.svg"} 
+            alt="" 
+            aria-hidden="true" 
+            width={24} 
+            height={24} 
+            className="h-auto w-9" 
+          />
+        </button>
       </header>
-      <NavItems />
+      <NavItems active={active}/>
     </nav>
   )
 }

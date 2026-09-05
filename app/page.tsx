@@ -1,3 +1,5 @@
+"use client"
+
 import Footer from "@/components/footer/Footer";
 import NavBar from "@/components/header/NavBar";
 import BookConsultation from "@/components/sections/BookConsultation";
@@ -8,11 +10,20 @@ import ManagementDevelopmentProgram from "@/components/sections/ManagementDevelo
 import Testimonials from "@/components/sections/Testimonials";
 import Trainings from "@/components/sections/Trainings";
 import TrainingTheConsultant from "@/components/sections/TrainingTheConsultant";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const path = usePathname()
+  const [active, setActive] = useState<string>("")
+
+  useEffect(() => {
+    path == "/" ? setActive("About") : null
+  }, [path])
+
   return (
    <>
-    <NavBar />
+    <NavBar active={active} />
     <main className="flex flex-col gap-8">
       <Hero />
       <LearningManagementSystem />
