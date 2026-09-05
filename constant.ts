@@ -96,3 +96,21 @@ export const whatWeDo = ["Sustainability Services", "Strategy Planning and Imple
 export const company = ["About", "Jobs", "Projects", "Our Founder", "Business Model", "The Team", "Contact Us", "Blog", "FAQs", "Help a Tech Talent", "Testimonials"]
 
 export const solution = ["Tobams Group Academy", "Help a Tech Talent", "Campus Ambassadors Program", "Join Our Platform", "Pricing", "Strategic Partnership", "Book a Consultation", "Digital Marketing", "Join Our Slack Community"]
+
+export const socials= [
+    {
+        icon: "/icons/linkedin.svg",
+        link: "https://linkedin.com/company/tobams-group",
+        label: "Follow us on LinkedIn"
+    },
+    {
+        icon: "/icons/instagram.svg",
+        link: "https://www.instagram.com/tobamsgroup/?igsh=cmkxY2hremU5a2Zw",
+        label: "Follow us on Instagray"
+    },
+    {
+        icon: "/icons/twitter-x.svg",
+        link: "https://x.com/Tobams_group",
+        label: "Follow us on X (formerly Twitter)"
+    },
+]
