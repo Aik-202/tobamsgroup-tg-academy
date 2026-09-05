@@ -4,10 +4,10 @@ import Logo from "../Logo";
 import Image from "next/image";
 import { useState } from "react";
 
-export default function NavBar({ active } : {active: string}) {
-  const [menuOpen, setMenuOpen] = useState<boolean>(false)
+export default function NavBar({ active, menuOpen, setMenuOpen } 
+  : {active: string, menuOpen: boolean, setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>}) {
   return (
-    <nav className="flex flex-col gap-4">
+    <nav className="flex flex-col gap-4 relative">
       <header className="w-full flex flex-row justify-between border border-transparent
       border-b-light px-5 lg:px-3 -mb-2 md:mb-0">
         <Logo />
@@ -33,7 +33,7 @@ export default function NavBar({ active } : {active: string}) {
           />
         </button>
       </header>
-      <NavItems active={active}/>
+      <NavItems active={active} menuOpen={menuOpen}/>
     </nav>
   )
 }

@@ -20,7 +20,7 @@ export default function Button({color, variant, text, size}: ButtonProps) {
     ${size == "big" ? "px-6" : "px-4" }`}>
         
         {variant == "account" && <figure className="bg-light rounded-full 
-        w-6 xl:w-8 h-full mr-2 m-1">
+        w-6 xl:w-8 lg:h-full mr-2 m-1">
             <Image src="/icons/user.svg" 
             alt="User Profile" width={28} height={28} className="h-auto w-full"/>
         </figure>}

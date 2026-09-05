@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const path = usePathname()
   const [active, setActive] = useState<string>("")
+  const [menuOpen, setMenuOpen] = useState<boolean>(false)
 
   useEffect(() => {
     path == "/" ? setActive("About") : null
@@ -23,8 +24,8 @@ export default function Home() {
 
   return (
    <>
-    <NavBar active={active} />
-    <main className="flex flex-col gap-8">
+    <NavBar active={active} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+    <main className={`${menuOpen ? " hidden lg:flex": "lg:flex"} flex-col gap-8`}>
       <Hero />
       <LearningManagementSystem />
       <Trainings />
