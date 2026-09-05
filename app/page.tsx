@@ -25,7 +25,7 @@ export default function Home() {
   return (
    <>
     <NavBar active={active} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-    <main className={`${menuOpen ? " hidden lg:flex": "lg:flex"} flex-col gap-8`}>
+    <main className={`${menuOpen ? "hidden lg:flex": "flex"} flex-col gap-16`}>
       <Hero />
       <LearningManagementSystem />
       <Trainings />
