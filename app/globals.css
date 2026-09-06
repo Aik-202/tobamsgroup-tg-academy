@@ -12,6 +12,8 @@
   --color-primary-40: #8F6182;
   --color-secondary-20: #EF435333;
   --color-primary-10: #5712441A;
+  --color-inner: #C4C4C4;
+  --color-primary-90: #1D0617;
   --background-image-hero: url("/images/hero-image.jpg");
   --font-heading: var(--font-nunito);
   --font-body: var(--font-nunito-sans);

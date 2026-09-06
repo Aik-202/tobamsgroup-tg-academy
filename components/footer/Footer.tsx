@@ -8,8 +8,12 @@ export default function Footer() {
   return (
     <footer>
       <FooterCTA />
-      <section>
-        <div>
+      <section className="bg-primary-dark flex flex-col gap-10 
+      p-5 md:p-10 md:px-14 text-white">
+        <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row 
+        lg:justify-between font-normal 
+        font-body text-xs md:text-[16px] lg:text-xs xl:text-sm 
+        2xl:text-base w-full">
           <CompanyDetails />
           <FooterLinks />
         </div>
