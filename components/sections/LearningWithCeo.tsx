@@ -33,7 +33,7 @@ export default function LearningWithCeo() {
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-5 w-full">
             {ceoPrograms.map((course => <li key={course} className="flex flex-row gap-2 xl:gap-3 
           items-center bg-white rounded-xl text-dark py-3 px-5 font-body 
-          font-normal text-[14px] md:text-[17px] lg:text-base 2xl:text-[16px]">
+          font-normal text-[14px] md:text-[17px] lg:text-base 2xl:text-[16px] text-nowrap">
               <Lightning variant="outlined" className="w-5 h-5 xl:w-6 xl:h-6"/>
               <span>{course}</span>
               </li>))}

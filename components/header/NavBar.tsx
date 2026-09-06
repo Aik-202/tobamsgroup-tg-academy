@@ -7,7 +7,8 @@ import { useState } from "react";
 export default function NavBar({ active, menuOpen, setMenuOpen } 
   : {active: string, menuOpen: boolean, setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>}) {
   return (
-    <nav className="flex flex-col gap-4 relative">
+    <nav className={`${menuOpen ? "min-h-screen lg:min-h-full" : "h-auto"} 
+    flex flex-col gap-4 relative`}>
       <header className="w-full flex flex-row justify-between border border-transparent
       border-b-light px-5 lg:px-3 -mb-2 md:mb-0">
         <Logo />

@@ -32,7 +32,7 @@ export default function LearningManagementSystem() {
             text-primary font-bold">Some of our courses include:</p>
             <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 ml-8">
               {lmsCourses.map((course => <li key={course} className="list-disc text-dark 
-              text-[14px] md:text-lg lg:text-xs xl:text-sm 2xl:text-[17px]">
+              text-[14px] md:text-lg lg:text-xs xl:text-sm 2xl:text-[17px] text-nowrap">
                 {course}
               </li>))}
               <li className="lg:hidden -ml-8 mt-5">

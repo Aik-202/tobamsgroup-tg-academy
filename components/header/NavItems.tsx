@@ -5,7 +5,7 @@ import Button from "../ui/Button";
 
 export default function NavItems({ active, menuOpen } : {active: string, menuOpen: boolean}) {
   return (
-    <ul className={`${menuOpen ? "fixed w-full flex flex-col h-[87vh] md:min-h-[90vh] p-5 top-24 z-20 lg:p-0 lg:h-auto lg:min-h-auto lg:w-auto lg:static lg:flex-row lg:gap-5 xl:gap-8 bg-primary-dark lg:bg-transparent"
+    <ul className={`${menuOpen ? "absolute w-full flex flex-col min-h-[90vh] p-5 top-24 z-20 lg:top-0 lg:p-0 lg:h-auto lg:min-h-auto lg:w-auto lg:static lg:flex-row lg:gap-5 xl:gap-8 bg-primary-dark lg:bg-transparent"
     : "hidden lg:flex lg:flex-row lg:gap-5 xl:gap-8"} self-center mb-4`}>
       {navList.map((item => <li key={item.text} 
       aria-haspopup={item.dropdown ? "true" : undefined} 
