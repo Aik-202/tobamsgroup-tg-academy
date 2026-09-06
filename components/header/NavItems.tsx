@@ -5,13 +5,13 @@ import Button from "../ui/Button";
 
 export default function NavItems({ active, menuOpen } : {active: string, menuOpen: boolean}) {
   return (
-    <ul className={`${menuOpen ? "sticky w-full flex flex-col h-[87vh] md:min-h-[90vh] p-5 bottom-0 z-20 lg:p-0 lg:h-auto lg:min-h-auto lg:w-auto lg:static lg:flex-row lg:gap-5 xl:gap-8 bg-primary-dark lg:bg-transparent"
+    <ul className={`${menuOpen ? "fixed w-full flex flex-col h-[87vh] md:min-h-[90vh] p-5 top-24 z-20 lg:p-0 lg:h-auto lg:min-h-auto lg:w-auto lg:static lg:flex-row lg:gap-5 xl:gap-8 bg-primary-dark lg:bg-transparent"
     : "hidden lg:flex lg:flex-row lg:gap-5 xl:gap-8"} self-center mb-4`}>
       {navList.map((item => <li key={item.text} 
       aria-haspopup={item.dropdown ? "true" : undefined} 
       aria-expanded={item.dropdown ? "false" : undefined}>
         <Link href={item.link} className={`border border-transparent p-2 md:p-5 lg:p-0.5 xl:p-1 
-        ltext-lg md:text-xl lg:text-sm xl:text-base 2xl:text-lg
+        ltext-lg md:text-xl lg:text-sm xl:text-base 2xl:text-[16px]
         ${active == item.text ? "text-white lg:text-primary font-semibold border-b-tranparent lg:border-b-primary" 
           : "text-light lg:text-dark font-medium border-transparent"} font-body flex flex-row 
           justify-between lg:justify-normal lg:gap-1 items-center`}>

@@ -12,15 +12,15 @@ export default function Trainings() {
         lg:justify-between w-full lg:items-center`}>
         <div className="flex flex-col lg:w-[50%]">
           <h3 className="hidden lg:block font-heading font-semibold text-dark lg:text-3xl 
-          xl:text-4xl 2xl:text-5xl mb-4">{training.heading}</h3>
+          xl:text-4xl 2xl:text-[46px] mb-4">{training.heading}</h3>
           <p className="text-subdued text-sm md:text-xl lg:text-base 
-          2xl:text-[22px] font-normal">{training.body}</p>
+          2xl:text-[20px] font-normal">{training.body}</p>
           <ul className="flex flex-col gap-4 mt-8 lg:ml-8">
             {training.programs.map((course => <li key={course} className="flex flex-row 
             gap-3 items-center">
               <Lightning variant="solid" className="w-4.5 h-4.5 md:w-5 md:h-5"/>
               <span className="text-subdued text-sm md:text-xl lg:text-base 
-              2xl:text-[22px] font-normal">{course}</span>
+              2xl:text-[20px] font-normal">{course}</span>
             </li>))}
           </ul>
         </div>

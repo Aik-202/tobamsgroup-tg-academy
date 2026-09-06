@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ManagementDevelopmentProgram() {
   return (
     <section className="flex flex-col gap-5 lg:gap-0 lg:flex-row lg:justify-between mx-5 
-    md:mx-8 xl:mx-12 2xl:mx-30 bg-primary-mid rounded-[20px] p-5 md:p-8 xl:p-10 2xl:p-14">
+    md:mx-8 xl:mx-12 2xl:mx-24 bg-primary-mid rounded-[20px] p-5 md:p-8 xl:p-10 2xl:p-14">
       <h2 className="lg:hidden text-white font-heading text-[18px] md:text-3xl  
       font-semi-bold md:leading-12">
         Management Development Program</h2>
@@ -14,11 +14,11 @@ export default function ManagementDevelopmentProgram() {
       xl:w-[42%] 2xl:w-[45%] object-cover rounded-[20px]"
       />      
       <div className="flex flex-col gap-8 text-white lg:w-[48%]">
-        <h2 className="hidden lg:block font-heading text-3xl xl:text-4xl 2xl:text-[50px] 
+        <h2 className="hidden lg:block font-heading text-3xl xl:text-4xl 2xl:text-5xl 
         font-semi-bold leading-12 xl:leading-14 2xl:leading-20">
           Management Development Program</h2>
         <p className="font-normal text-[14px] md:text-[20px] lg:text-sm 
-        xl:text-base 2xl:text-xl font-body">Tobams Group offers a comprehensive Management
+        xl:text-base 2xl:text-[18px] font-body">Tobams Group offers a comprehensive Management
           Development Program designed to equip corporate
           organisations with the high
           -performing leaders they need to

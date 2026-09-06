@@ -14,10 +14,10 @@ export default function LearningManagementSystem() {
       <div className="w-[90%] lg:w-[52%] 2xl:w-[50%] flex 
       flex-col gap-6 xl:gap-8 2xl:gap-10 items-start">
         <h2 className="hidden lg:block font-semibold font-heading text-3xl xl:text-[40px] 
-        2xl:text-5xl text-primary">Learning Management System</h2>
+        2xl:text-[46px] text-primary">Learning Management System</h2>
         <div className="rounded-lg bg-primary/10 flex flex-col 
         gap-5 p-6 md:p-10 font-normal font-body text-dark">
-          <p className="text-[14px] md:text-xl lg:text-sm xl:text-base 2xl:text-[20px]">
+          <p className="text-[14px] md:text-xl lg:text-sm xl:text-base 2xl:text-[19px]">
             TG Academy is a hub of knowledge and skill-building resources 
             designed to empower tech talents on their learning journey. 
             From technical courses covering the latest programming languages 
@@ -28,11 +28,11 @@ export default function LearningManagementSystem() {
             enhance their skills and stay ahead in today's competitive tech 
             landscape.</p>
           <div className="flex flex-col gap-3">
-            <p className="text-[16px] md:text-xl lg:text-sm xl:text-base 2xl:text-[20px]
+            <p className="text-[16px] md:text-xl lg:text-sm xl:text-base 2xl:text-[19px]
             text-primary font-bold">Some of our courses include:</p>
             <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 ml-8">
               {lmsCourses.map((course => <li key={course} className="list-disc text-dark 
-              text-[14px] md:text-lg lg:text-xs xl:text-sm 2xl:text-[18px]">
+              text-[14px] md:text-lg lg:text-xs xl:text-sm 2xl:text-[17px]">
                 {course}
               </li>))}
               <li className="lg:hidden -ml-8 mt-5">
