@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer>
       <FooterCTA />
-      <Reveal className="bg-primary-dark flex flex-col gap-10 
+      <section className="bg-primary-dark flex flex-col gap-10 
       p-5 md:p-10 md:px-14 text-white">
         <Reveal className="flex flex-col gap-5 lg:gap-0 lg:flex-row 
         lg:justify-between font-normal 
@@ -20,7 +20,7 @@ export default function Footer() {
         </Reveal>
         <Contact />
         <Legalnformation />
-      </Reveal>
+      </section>
     </footer>
   )
 }
