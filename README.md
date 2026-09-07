@@ -137,9 +137,11 @@ public/
 
 constants.ts
 
-The components directory is organized by responsibility, with header, footer, page sections, icons, and shared UI elements separated into their respective directories.
+```
 
-Static content shared across multiple sections is maintained in constants.ts at the project root. This keeps content separate from presentation logic without introducing additional data or utility layers that are unnecessary for the scope of this static landing page.
+The `components` directory is organized by responsibility, with header, footer, page sections, icons, and shared UI elements separated into their respective directories.
+
+Static content shared across multiple sections is maintained in `constants.ts` at the project root. This keeps content separate from presentation logic without introducing additional data or utility layers that are unnecessary for the scope of this static landing page.
 
 ## Technical Assumptions
 

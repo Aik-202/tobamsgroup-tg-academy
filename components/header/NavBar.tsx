@@ -2,7 +2,6 @@ import NavItems from "./NavItems";
 import Button from "../ui/Button";
 import Logo from "../Logo";
 import Image from "next/image";
-import { useState } from "react";
 
 export default function NavBar({ active, menuOpen, setMenuOpen } 
   : {active: string, menuOpen: boolean, setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>}) {
