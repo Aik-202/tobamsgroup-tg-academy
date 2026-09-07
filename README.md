@@ -107,6 +107,9 @@ app/
 └── page.tsx
 
 components/
+├── animation/
+│   ├── DropDown.tsx
+│   ├── Reveal.tsx
 ├── footer/
 │   ├── CompanyDetails.tsx
 │   ├── Contact.tsx
