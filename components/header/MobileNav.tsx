@@ -28,7 +28,9 @@ export default function MobileNav({
                   ? "text-white font-semibold"
                   : "text-light font-medium"
               }
-              font-body flex flex-row justify-between items-center`}
+              font-body flex flex-row justify-between items-center
+              transition-colors duration-300 ease-out hover:font-semibold
+            hover:border-b-primary hover:text-primary`}
             >
               <span>{item.text}</span>
 
