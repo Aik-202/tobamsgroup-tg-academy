@@ -4,7 +4,7 @@ Frontend implementation of the Tobams Group Training and Development landing pag
 
 ## Preview
 
-![Tobams Group Training and Development landing page](public/images/tobams-group-preview.png)
+![Tobams Group Training and Development landing page](./public/images/tobams-group-preview.png)
 
 ## Live Demo
 
