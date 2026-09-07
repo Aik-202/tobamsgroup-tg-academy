@@ -28,13 +28,15 @@ export default function Contact() {
             <div className="flex flex-row gap-3 items-center mb-3">
                 <Image src="/icons/mail.svg" alt="" aria-hidden="true" 
                 width={24} height={24} className="w-4 h-4 md:w-6 md:h-6 
-                lg:h-4 lg:w-4 xl:h-6 xl:w-6" />
+                lg:h-4 lg:w-4 xl:h-6 xl:w-6"
+                placeholder='blur' />
                 <p>theteam@tobamsgroup.com</p>
             </div>
             <div className="flex flex-row gap-3 items-center">
                 <Image src="/icons/phone.svg" alt="" aria-hidden="true"
                 width={24} height={24} className="w-4 h-4 md:w-6 md:h-6 
-                lg:h-4 lg:w-4 xl:h-6 xl:w-6" />
+                lg:h-4 lg:w-4 xl:h-6 xl:w-6" 
+                placeholder='blur'/>
                 <p>+447886600748</p>
             </div>
         </div>

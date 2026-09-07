@@ -24,7 +24,7 @@ export default function Trainings() {
             </li>))}
           </ul>
         </div>
-        <Image src={training.image} 
+        <Image src={training.image} placeholder='blur'
         alt={training.heading} width={600} height={600} className={`h-auto lg:w-[43%] xl:w-[42%] 2xl:w-[40%]
         ${index == 0 ? "rounded-tl-[30px] rounded-tr-3xl rounded-br-[23px] rounded-bl-[40px] lg:rounded-tl-[56px] lg:rounded-tr-3xl lg:rounded-bl-xl lg:rounded-br-[23px]" 
         : index == 1 ? "rounded-tl-[33px] rounded-tr-lg rounded-b-lg" 

@@ -24,7 +24,7 @@ export default function LearningWithCeo() {
         potential and drive success in your endeavours.</p>
 
       <div className="flex flex-col gap-8 lg:gap-0 lg:flex-row lg:justify-between items-center mt-8">
-        <Image src="/images/learning-with-ceo.jpg" 
+        <Image src="/images/learning-with-ceo.jpg" placeholder='blur'
         alt="learning-with-ceo" width={600} height={600} className="h-auto w-full lg:w-[60%] xl:w-[43%] 2xl:w-[48%] 
         object-cover rounded-lg" />
 

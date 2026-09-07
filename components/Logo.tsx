@@ -9,6 +9,7 @@ export default function Logo() {
   return (
     <Image src="/images/logo.png" alt="tobamsgroup" width={500} height={500} 
     className="h-auto w-36 md:w-45 lg:w-35 xl:w-40 2xl:w-48 cursor-pointer" 
+    placeholder='blur'
     onClick={() => router.push("/")}/>
   )
 }

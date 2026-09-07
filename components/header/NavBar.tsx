@@ -30,6 +30,7 @@ export default function NavBar({ active, menuOpen, setMenuOpen }
             width={24} 
             height={24} 
             className="h-auto w-9" 
+            placeholder='blur'
           />
         </button>
       </header>

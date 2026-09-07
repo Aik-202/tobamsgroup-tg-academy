@@ -22,6 +22,7 @@ export default function CompanyDetails() {
                 aria-hidden="true"  
                 width={100}
                 height={100}
+                placeholder='blur'
                 className="w-8 h-8 md:w-10 md:h-10 lg:w-8 lg:h-8 
                 xl:w-10 xl:h-10 2xl:h-14 2xl:w-14"
                 />
