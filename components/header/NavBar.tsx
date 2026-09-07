@@ -1,7 +1,8 @@
-import NavItems from "./NavItems";
 import Button from "../ui/Button";
 import Logo from "../Logo";
 import Image from "next/image";
+import DesktopNav from "./DesktopNav";
+import MobileNav from "./MobileNav";
 
 export default function NavBar({ active, menuOpen, setMenuOpen } 
   : {active: string, menuOpen: boolean, setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>}) {
@@ -30,11 +31,14 @@ export default function NavBar({ active, menuOpen, setMenuOpen }
             width={24} 
             height={24} 
             className="h-auto w-9" 
-            placeholder='blur'
           />
         </button>
       </header>
-      <NavItems active={active} menuOpen={menuOpen}/>
+      <DesktopNav active={active} />
+      <MobileNav
+        active={active}
+        menuOpen={menuOpen}
+      />
     </nav>
   )
 }

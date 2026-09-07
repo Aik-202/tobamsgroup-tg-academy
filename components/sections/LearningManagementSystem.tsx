@@ -1,6 +1,7 @@
 import { lmsCourses } from "@/constants";
 import Image from "next/image";
 import Button from "../ui/Button";
+import lmsPhoto from "../../public/images/learning-management-system.webp"
 
 export default function LearningManagementSystem() {
   return (
@@ -8,7 +9,7 @@ export default function LearningManagementSystem() {
     lg:justify-between items-center w-full p-4.5 md:p-6 py-10 lg:p-15 2xl:p-20 bg-primary/10">
       <h2 className="block lg:hidden font-semibold font-heading text-xl 
       md:text-4xl text-primary">Learning Management System</h2>
-      <Image src="/images/learning-management-system.webp" placeholder='blur'
+      <Image src={lmsPhoto} placeholder='blur'
       alt="learning-management-system" width={700} height={700} className="h-auto w-full md:w-[80%] 
       lg:w-[42%] xl:w-[40%]"/>
       <div className="w-[90%] lg:w-[52%] 2xl:w-[50%] flex 

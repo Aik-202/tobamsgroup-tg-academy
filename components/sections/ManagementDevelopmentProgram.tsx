@@ -1,6 +1,7 @@
 import { managementDevPrograms } from "@/constants";
 import { Lightning } from "../icons/Lightning";
 import Image from "next/image";
+import managementPhoto from "../../public/images/management-development-program.jpg"
 
 export default function ManagementDevelopmentProgram() {
   return (
@@ -9,7 +10,7 @@ export default function ManagementDevelopmentProgram() {
       <h2 className="lg:hidden text-white font-heading text-[18px] md:text-3xl  
       font-semi-bold md:leading-12">
         Management Development Program</h2>
-      <Image src="/images/management-development-program.jpg" placeholder='blur'
+      <Image src={managementPhoto} placeholder='blur'
       alt="management-development-program" width={900} height={900} className="h-auto lg:w-[43%] 
       xl:w-[42%] 2xl:w-[45%] object-cover rounded-[20px]"
       />      

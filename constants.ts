@@ -1,3 +1,7 @@
+import corporateTrainingPhoto from "./public/images/corporate-trainings.jpg"
+import individualTrainingPhoto from "./public/images/personalized-individual-training.jpg"
+import capacityDevPhoto from "./public/images/capacity-development.jpg"
+
 export const navList = [
     {
         text: "About",
@@ -49,19 +53,19 @@ export const managementDevPrograms =  ["Enhanced Leadership Skills", "Improved E
 
 export const trainings = [ 
     {
-        image: "/images/corporate-trainings.jpg",
+        image: corporateTrainingPhoto,
         heading: "Corporate Trainings",
         body: "Empower your team with our customised Corporate Training programs designed to address the unique needs and objectives of your organisation. Our expert facilitators work closely with your team to deliver tailored learning experiences that align with your company's goals and values.",
         programs: ["Leadership Training", "Strategic Planning and Implementation", "Project Management", "Sustainability Training", "Customised Training"]
     },
     {
-        image: "/images/personalized-individual-training.jpg",
+        image: individualTrainingPhoto,
         heading: "Personalised Individual Training",
         body: "Begin a journey of lifelong learning and professional development with Tobams Group's diverse range of training programs for individuals. From technical skills mastery to soft skills enhancement, our courses cover a wide spectrum of topics to meet the evolving needs of today's professionals.  ",
         programs:  ["Leadership Development", "Soft Skills Development", "Industry Specific Knowledge", "Technical Skills Enhancement", "Time Management and Productivity", "Career Development"]
     },
     {
-        image: "/images/capacity-development.jpg",
+        image: capacityDevPhoto,
         heading: "Capacity Development",
         body: "At Tobams Group, we empower individuals and organizations through tailored training programs, expert-led workshops, and personalized mentorship. We are committed to your success and growth. We are dedicated to providing a comprehensive suite of benefits designed to foster your development and success:",
         programs: ["Tailored Training Programs", "Expert-Led Workshops", "Personalized Mentorship", "Technical Skills Enhancement", "Collaborative Learning Environment", "Ongoing Support and Resources"]

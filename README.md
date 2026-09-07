@@ -4,7 +4,7 @@ Frontend implementation of the Tobams Group Training and Development landing pag
 
 ## Preview
 
-![Tobams Group Training and Development landing page](./public/images/tobams-group-preview.png)
+![Tobams Group Training and Development landing page](public/images/tobams-group-preview.png)
 
 ## Live Demo
 
@@ -51,7 +51,7 @@ Accessibility was considered throughout the implementation.
 
 • Images containing meaningful information have descriptive alternative text. 
 
-• All Images have the property `placeholder='blur'` that tells Next.js to show a blurred placeholder while the actual image is loading.
+• Some Images have the property `placeholder='blur' ` that tells Next.js to show a blurred placeholder while the actual image is loading.
 
 • Interactive elements are keyboard accessible with visible focus states.
 
