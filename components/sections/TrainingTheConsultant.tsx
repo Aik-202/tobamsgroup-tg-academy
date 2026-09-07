@@ -1,4 +1,4 @@
-import { consultantPrograms } from "@/constant";
+import { consultantPrograms } from "@/constants";
 import Button from "../ui/Button";
 
 export default function TrainingTheConsultant() {

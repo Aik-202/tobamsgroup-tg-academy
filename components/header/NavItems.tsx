@@ -1,4 +1,4 @@
-import { navList } from "@/constant";
+import { navList } from "@/constants";
 import Link from "next/link";
 import { ChevronDown } from "../icons/ChevronDown";
 import Button from "../ui/Button";

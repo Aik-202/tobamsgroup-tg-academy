@@ -1,4 +1,4 @@
-import { socials } from "@/constant";
+import { socials } from "@/constants";
 import Image from "next/image";
 import Logo from "../Logo";
 

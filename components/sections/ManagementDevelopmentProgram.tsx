@@ -1,4 +1,4 @@
-import { managementDevPrograms } from "@/constant";
+import { managementDevPrograms } from "@/constants";
 import { Lightning } from "../icons/Lightning";
 import Image from "next/image";
 

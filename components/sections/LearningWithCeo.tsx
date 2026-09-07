@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "../ui/Button";
-import { ceoPrograms } from "@/constant";
+import { ceoPrograms } from "@/constants";
 import { Lightning } from "../icons/Lightning";
 
 export default function LearningWithCeo() {

@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react';
 import Image from 'next/image';
-import { testimonials } from '@/constant';
+import { testimonials } from '@/constants';
 
 export default function Testimonials() {
   const sliderRef = useRef<HTMLDivElement>(null);

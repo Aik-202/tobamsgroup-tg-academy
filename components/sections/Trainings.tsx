@@ -1,4 +1,4 @@
-import { trainings } from "@/constant";
+import { trainings } from "@/constants";
 import { Lightning } from "../icons/Lightning";
 import Image from "next/image";
 

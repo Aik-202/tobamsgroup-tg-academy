@@ -1,4 +1,4 @@
-import { footerlinks} from "@/constant";
+import { footerlinks} from "@/constants";
 import Link from "next/link";
 
 export default function FooterLinks() {

@@ -1,4 +1,4 @@
-import { lmsCourses } from "@/constant";
+import { lmsCourses } from "@/constants";
 import Image from "next/image";
 import Button from "../ui/Button";
 
