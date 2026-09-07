@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ChevronDown } from "../icons/ChevronDown";
 import Button from "../ui/Button";
 import Dropdown from "../animation/DropDown";
+import { motion } from "framer-motion"
 
 export default function MobileNav({
   active,
@@ -13,7 +14,22 @@ export default function MobileNav({
 }) {
   return (
     <Dropdown open={menuOpen}>
-      <ul
+      <motion.ul
+      initial={{
+        opacity: 0,
+        y: 15,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+      }}
+      viewport={{
+        amount: 0.2,
+      }}
+      transition={{
+        duration: 0.7,
+        ease: "easeOut",
+      }}
         className="lg:hidden absolute w-full p-5 top-24 z-20
         bg-primary-dark min-h-screen flex flex-col gap-2"
       >
@@ -59,7 +75,7 @@ export default function MobileNav({
             text="Take Assessment"
           />
         </li>
-      </ul>
+      </motion.ul>
     </Dropdown>
   );
 }
