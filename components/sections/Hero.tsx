@@ -1,8 +1,9 @@
+import Reveal from "../animation/Reveal";
 import Button from "../ui/Button";
 
 export default function Hero() {
   return (
-    <section className="bg-hero bg-cover w-full text-white min-h-[60vh] md:h-[50vh] lg:h-[72vh] 
+    <Reveal className="bg-hero bg-cover w-full text-white min-h-[60vh] md:h-[50vh] lg:h-[72vh] 
     xl:h-[62vh] 2xl:h-[70vh] bg-position-[50%] relative">
       <div className="absolute flex flex-col font-body 
     justify-center items-center w-full top-0 h-full z-10">
@@ -22,6 +23,6 @@ export default function Hero() {
       </div>
       <div className="bg-black/71 lg:bg-black/70 absolute w-full h-full 
       top-0"></div>
-    </section>
+    </Reveal>
   )
 }

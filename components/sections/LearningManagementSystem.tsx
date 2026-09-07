@@ -2,10 +2,11 @@ import { lmsCourses } from "@/constants";
 import Image from "next/image";
 import Button from "../ui/Button";
 import lmsPhoto from "../../public/images/learning-management-system.webp"
+import Reveal from "../animation/Reveal";
 
 export default function LearningManagementSystem() {
   return (
-    <section className="flex flex-col gap-10 lg:gap-0 lg:flex-row 
+    <Reveal className="flex flex-col gap-10 lg:gap-0 lg:flex-row 
     lg:justify-between items-center w-full p-4.5 md:p-6 py-10 lg:p-15 2xl:p-20 bg-primary/10">
       <h2 className="block lg:hidden font-semibold font-heading text-xl 
       md:text-4xl text-primary">Learning Management System</h2>
@@ -46,6 +47,6 @@ export default function LearningManagementSystem() {
           <Button text="Learn More" variant="learn_more" color="purple"/>
         </div>
       </div>
-    </section>
+    </Reveal>
   )
 }

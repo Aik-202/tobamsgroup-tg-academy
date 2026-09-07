@@ -1,13 +1,32 @@
+"use client"
+
 import Button from "../ui/Button";
 import Logo from "../Logo";
 import Image from "next/image";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
+import { motion } from "framer-motion"
 
 export default function NavBar({ active, menuOpen, setMenuOpen } 
   : {active: string, menuOpen: boolean, setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>}) {
   return (
-    <nav className={`${menuOpen ? "min-h-screen lg:min-h-full" : "h-auto"} 
+    <motion.nav 
+    initial={{
+        opacity: 0,
+        y: 15,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+      }}
+      viewport={{
+        amount: 0.2,
+      }}
+      transition={{
+        duration: 0.7,
+        ease: "easeOut",
+      }} 
+    className={`${menuOpen ? "min-h-screen lg:min-h-full" : "h-auto"} 
     flex flex-col gap-4 relative`}>
       <header className="w-full flex flex-row justify-between border border-transparent
       border-b-light px-5 lg:px-3 -mb-2 md:mb-0">
@@ -31,7 +50,6 @@ export default function NavBar({ active, menuOpen, setMenuOpen }
             width={24} 
             height={24} 
             className="h-auto w-9" 
-            placeholder='blur'
           />
         </button>
       </header>
@@ -40,6 +58,6 @@ export default function NavBar({ active, menuOpen, setMenuOpen }
         active={active}
         menuOpen={menuOpen}
       />
-    </nav>
+    </motion.nav>
   )
 }

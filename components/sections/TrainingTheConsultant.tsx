@@ -1,9 +1,10 @@
 import { consultantPrograms } from "@/constants";
 import Button from "../ui/Button";
+import Reveal from "../animation/Reveal";
 
 export default function TrainingTheConsultant() {
   return (
-    <section className="flex flex-col gap-5 xl:gap-8 p-5 md:p-10 md:py-15 
+    <Reveal className="flex flex-col gap-5 xl:gap-8 p-5 md:p-10 md:py-15 
     lg:p-20 bg-primary-10 items-start">
       <h2 className="font-semibold font-heading text-2xl md:text-4xl xl:text-[40px] 
       2xl:text-[46px] text-primary">Training The Consultant</h2>
@@ -30,6 +31,6 @@ export default function TrainingTheConsultant() {
         </li>))}
       </ul>
       <Button color="purple" text="Learn More" variant="learn_more_right"/>
-    </section>
+    </Reveal>
   )
 }

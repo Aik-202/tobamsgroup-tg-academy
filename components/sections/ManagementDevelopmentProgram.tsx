@@ -2,10 +2,11 @@ import { managementDevPrograms } from "@/constants";
 import { Lightning } from "../icons/Lightning";
 import Image from "next/image";
 import managementPhoto from "../../public/images/management-development-program.jpg"
+import Reveal from "../animation/Reveal";
 
 export default function ManagementDevelopmentProgram() {
   return (
-    <section className="flex flex-col gap-5 lg:gap-0 lg:flex-row lg:justify-between mx-5 
+    <Reveal className="flex flex-col gap-5 lg:gap-0 lg:flex-row lg:justify-between mx-5 
     md:mx-8 xl:mx-12 2xl:mx-24 bg-primary-mid rounded-[20px] p-5 md:p-8 xl:p-10 2xl:p-14">
       <h2 className="lg:hidden text-white font-heading text-[18px] md:text-3xl  
       font-semi-bold md:leading-12">
@@ -39,6 +40,6 @@ export default function ManagementDevelopmentProgram() {
           </li>))}
         </ul>
       </div>
-    </section>
+    </Reveal>
   )
 }

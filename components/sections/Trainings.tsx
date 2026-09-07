@@ -1,12 +1,13 @@
 import { trainings } from "@/constants";
 import { Lightning } from "../icons/Lightning";
 import Image from "next/image";
+import Reveal from "../animation/Reveal";
 
 export default function Trainings() {
   return (
     <section className="bg-white flex flex-col gap-10 md:gap-20 
     lg:gap-42 mx-5 md:mx-10 lg:mx-0 p-5 py-8 md:p-10 md:py-15 xl:p-20">
-      {trainings.map((training, index) => <div key={training.heading} className={`flex 
+      {trainings.map((training, index) => <Reveal key={training.heading} className={`flex 
       ${index%2 !== 0 ? "flex-col-reverse lg:flex-row-reverse" 
         : "flex-col-reverse lg:flex-row"} gap-5 md:gap-10 lg:gap-0 
         lg:justify-between w-full lg:items-center`}>
@@ -30,7 +31,7 @@ export default function Trainings() {
         : index == 1 ? "rounded-tl-[33px] rounded-tr-lg rounded-b-lg" 
         : "rounded-tl-[33px] lg:rounded-tl-[56px] rounded-tr-lg rounded-bl-lg" }`}  />
         <h3 className="block lg:hidden font-heading font-semibold text-dark text-lg md:text-4xl">{training.heading}</h3>
-      </div>)}
+      </Reveal>)}
     </section>
   )
 }

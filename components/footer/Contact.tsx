@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Reveal from "../animation/Reveal";
 
 export default function Contact() {
   return (
-    <section className="bg-white/6 rounded-lg p-5 md:p-8 flex flex-col-reverse gap-3 lg:gap-0 lg:flex-row 
+    <Reveal className="bg-white/6 rounded-lg p-5 md:p-8 flex flex-col-reverse gap-3 lg:gap-0 lg:flex-row 
    text-xs md:text-[16px] lg:text-xs xl:text-sm 2xl:text-base font-body font-normal items-end w-full">
         <div className="flex flex-col lg:flex-row">
             <div className="flex flex-col">
@@ -28,18 +29,16 @@ export default function Contact() {
             <div className="flex flex-row gap-3 items-center mb-3">
                 <Image src="/icons/mail.svg" alt="" aria-hidden="true" 
                 width={24} height={24} className="w-4 h-4 md:w-6 md:h-6 
-                lg:h-4 lg:w-4 xl:h-6 xl:w-6"
-                placeholder='blur' />
+                lg:h-4 lg:w-4 xl:h-6 xl:w-6" />
                 <p>theteam@tobamsgroup.com</p>
             </div>
             <div className="flex flex-row gap-3 items-center">
                 <Image src="/icons/phone.svg" alt="" aria-hidden="true"
                 width={24} height={24} className="w-4 h-4 md:w-6 md:h-6 
-                lg:h-4 lg:w-4 xl:h-6 xl:w-6" 
-                placeholder='blur'/>
+                lg:h-4 lg:w-4 xl:h-6 xl:w-6" />
                 <p>+447886600748</p>
             </div>
         </div>
-    </section>
+    </Reveal>
   )
 }

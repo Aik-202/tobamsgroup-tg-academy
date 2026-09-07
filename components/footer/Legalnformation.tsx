@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Reveal from "../animation/Reveal";
 
 export default function Legalnformation() {
   return (
-    <section className="flex flex-col-reverse gap-5 lg:gap-0 
+    <Reveal className="flex flex-col-reverse gap-5 lg:gap-0 
     lg:flex-row lg:justify-between w-full border items-center lg:items-start
     border-transparent border-t-light pt-8 font-heading font-light 
     text-xs md:text-[16px] lg:text-xs xl:text-sm 2xl:text-base px-8 md:px-0">
@@ -17,6 +18,6 @@ export default function Legalnformation() {
                 <li className="lg:hidden"><Link href="/terms-of-service">Terms and Conditions</Link></li>
             </ul>
         </nav>
-    </section>
+    </Reveal>
   )
 }

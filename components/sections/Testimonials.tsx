@@ -60,7 +60,6 @@ export default function Testimonials() {
                 alt={testimonial.name}
                 width={100}
                 height={100}
-                placeholder='blur'
                 className="h-12 w-12 rounded-full object-cover"
               />
 
@@ -86,7 +85,6 @@ export default function Testimonials() {
             width={24} 
             height={24} 
             className="w-8 h-8"
-            placeholder='blur'
           />
         </button>
         <button onClick={() => scroll('right')} aria-label="Next slide">
@@ -97,7 +95,6 @@ export default function Testimonials() {
             width={24} 
             height={24} 
             className="w-8 h-8" 
-            placeholder='blur'
           />
         </button>
       </div>
