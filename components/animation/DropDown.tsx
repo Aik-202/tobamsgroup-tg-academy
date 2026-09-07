@@ -17,7 +17,7 @@ export default function Dropdown({
           animate={{ height: "auto", opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}
           transition={{
-            duration: 0.5,
+            duration: 0.2,
             ease: "easeInOut",
           }}
           className="overflow-hidden"
