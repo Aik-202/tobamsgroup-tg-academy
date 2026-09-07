@@ -49,7 +49,9 @@ Accessibility was considered throughout the implementation.
 
 • Decorative icons are hidden from assistive technologies using `aria-hidden="true"` or empty alternative text where applicable.
 
-• Images containing meaningful information have descriptive alternative text.
+• Images containing meaningful information have descriptive alternative text. 
+
+• All Images have the property `placeholder='blur'` that tells Next.js to show a blurred placeholder while the actual image is loading.
 
 • Interactive elements are keyboard accessible with visible focus states.
 
@@ -161,10 +163,20 @@ Node.js 18.18 or later is recommended.
 
 ### Installation
 
+This project uses **pnpm** as its package manager. I used pnpm instead of npm because it provides efficient dependency management by using a shared package store and a non-flat dependency structure, reducing unnecessary duplication across projects.
+
+Using pnpm also ensures dependencies are installed according to the project's `pnpm-lock.yaml` file.
+
+```bash
+pnpm install
+pnpm dev
+```
+
 Clone the repository:
 
 ```bash
 git clone https://github.com/Aik-202/tobamsgroup-tg-academy
+```
 
 ## Author
 
