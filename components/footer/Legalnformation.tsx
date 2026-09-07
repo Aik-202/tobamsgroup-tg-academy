@@ -11,11 +11,15 @@ export default function Legalnformation() {
 
         <nav aria-label="Legal Navigation">
             <ul className="flex flex-row gap-5 justify-center 
-            md:justify-normal md:gap-10 underline flex-wrap">
-                <li className="hidden lg:block"><Link href="/terms-of-service">Terms and Conditions</Link></li>
-                <li><Link href="/privacy-policy">Privacy Policy</Link></li>
-                <li><Link href="/cookies-policy">Cookies Policy</Link></li>
-                <li className="lg:hidden"><Link href="/terms-of-service">Terms and Conditions</Link></li>
+            md:justify-normal md:gap-10 flex-wrap">
+                <li className="hidden lg:block hover:text-secondary hover:decoration-secondary underline
+                transition-all hover:font-semibold"><Link href="/terms-of-service">Terms and Conditions</Link></li>
+                <li className="hover:text-secondary transition-all hover:decoration-secondary underline
+                hover:font-semibold"><Link href="/privacy-policy">Privacy Policy</Link></li>
+                <li className="hover:text-secondary transition-all hover:decoration-secondary underline
+                hover:font-semibold"><Link href="/cookies-policy">Cookies Policy</Link></li>
+                <li className="lg:hidden hover:text-secondary hover:decoration-secondary underline
+                transition-all hover:font-semibold"><Link href="/terms-of-service">Terms and Conditions</Link></li>
             </ul>
         </nav>
     </Reveal>

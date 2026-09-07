@@ -21,7 +21,7 @@ export default function DesktopNav({ active }: { active: string }) {
                 : "text-light lg:text-dark font-medium border-transparent"
             }
             font-body flex flex-row justify-between lg:justify-normal
-            lg:gap-1 items-center transition-colors duration-300 ease-out
+            lg:gap-1 items-center transition-all duration-300 ease-out
             hover:border-b-primary hover:text-primary hover:font-semibold`}
           >
             <span>{item.text}</span>

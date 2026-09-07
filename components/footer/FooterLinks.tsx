@@ -9,7 +9,7 @@ export default function FooterLinks() {
             <h3 className="font-bold font-heading text-base md:text-[18px] lg:text-base xl:text-lg 
             2xl:text-xl">{li.heading}</h3>
             {li.links.map((item) => (
-            <li key={item} className="list-none">
+            <li key={item} className="list-none hover:text-secondary transition-all hover:font-semibold">
               <Link href={`/${item.toLowerCase().replace(/ /g, "-")}`}>
                 {item}
               </Link>
